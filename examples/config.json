@@ -1,0 +1,14 @@
+{
+	"Delay": 1,
+	"Route53_Configs": [
+		{
+			"Domain": "example.com",
+			"Subdomain": "home"
+		}
+	],
+	"SecurityGroup_Configs": [
+		{
+			"ID": "sg-1234"
+		}
+	]
+}
