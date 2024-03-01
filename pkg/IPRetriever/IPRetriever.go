@@ -12,7 +12,7 @@ type Provider string
 
 const (
 	ProviderAWS     Provider = "checkip.amazonaws.com"
-	ProviderICanHaz Provider = "icanhazip.com"
+	ProviderICanHaz Provider = "ipv4.icanhazip.com"
 )
 
 type IpRetriever func() (string, error)
