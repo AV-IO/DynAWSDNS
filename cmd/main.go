@@ -68,7 +68,7 @@ func load(path string) (c config) {
 }
 
 func setR53Record(domainName, subDomainName string, delay *time.Duration, retriever ipr.IpRetriever, wg *sync.WaitGroup) {
-	r53, err := DynR53.New("", "")
+	r53, err := DynR53.New(domainName, subDomainName)
 	if err != nil {
 		log.Fatal().Msg("Could not initialize route53 handler")
 	}
